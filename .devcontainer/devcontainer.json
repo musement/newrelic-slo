@@ -1,0 +1,13 @@
+{
+  "name": "QA newrelic SLO",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "quality-assurance-newrelic-slo",
+  "shutdownAction": "stopCompose",
+  "workspaceFolder": "/opt/quality-assurance-newrelic-slo",
+  "extensions": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "ms-vsliveshare.vsliveshare-pack",
+    "eamodio.gitlens"
+  ]
+}

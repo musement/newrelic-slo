@@ -1,0 +1,21 @@
+version: '3.7'
+
+volumes:
+  newrelic-slo-source:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: "${PWD}"
+      
+services:
+  quality-assurance-newrelic-slo:
+    container_name: qa-newrelic-slo
+    build: .
+    env_file: devcontainer.env
+    volumes:
+      - newrelic-slo-source:/opt/quality-assurance-newrelic-slo
+    command: sleep infinity
+    ports:
+      - "9973:9973"
+      - "5000:5000"
