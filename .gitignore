@@ -2,4 +2,6 @@
 node_modules
 .vscode
 out/*
-!out/.gitkeep 
+!out/.gitkeep
+.env
+devcontainer.env
