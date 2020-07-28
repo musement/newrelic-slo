@@ -1,6 +1,6 @@
 # Quality assurance New Relic SLO
 
-This project is a containerized version of [TestCafe](https://devexpress.github.io/testcafe/documentation/test-api/test-code-structure.html) web-based functional testing framework. It allows 
+This project is a containerized version of [New Relic Nerdpack SLO](https://github.com/newrelic/nr1-slo-r).
 
 
 ## Getting Started
@@ -124,8 +124,6 @@ the distribution installed on the remote container is a [Debian 9](https://www.d
 ## Conventions
 
 ### Git commit message convention
-
-The project follows [this Git commit message convention](https://musement.atlassian.net/wiki/spaces/TEC/pages/932872196/Write+a+Git+commit+message).
 
 #### Format:
 
