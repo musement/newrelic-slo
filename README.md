@@ -74,8 +74,39 @@ PROJECT_NAME=my-awesome-nerdpack make create
 Then you can try it by running the serve command (remembering to declare it as an environment variable)
 ```shell
 cd <YOUR_PROJECT_ROOT_DIRECTORY>
-PROJECT_NAME=my-awesome-nerdpack make run
+ PROJECT_NAME=my-awesome-nerdpack make run
+docker exec -it qa-newrelic-slo bash -c 'cd my-awesome-nerdpack && nr1 nerdpack:serve'
+Found and loaded 2 nr1.json files on MyAwesomeNerdpack (170f3d36-b183-49a5-a34a-9d92fa9b08e1) Nerdpack.
+
+Nerdpack:
+ ✔  MyAwesomeNerdpack (170f3d36-b183-49a5-a34a-9d92fa9b08e1) nr1.json
+
+Launchers:
+ ✔  my-awesome-nerdpack-launcher launchers/my-awesome-nerdpack-launcher/nr1.json
+
+Nerdlets:
+ ✔  my-awesome-nerdpack-nerdlet nerdlets/my-awesome-nerdpack-nerdlet/nr1.json
+
+There is no certificate created yet.
+ ✔  New certificate created.
+
+🛠  Built artifact files for:
+ ⁎  170f3d36-b183-49a5-a34a-9d92fa9b08e1--my-awesome-nerdpack-nerdlet built ✔
+
+ ✔  Nerdpack built successfully!
+ ★  Starting as orchestrator...
+
+ ✔  Server ready! Test it at: https://one.eu.newrelic.com/?nerdpacks=local
+ ↩  Server will reload automatically if you modify any file!
+
+🛠  Built artifact files for:
+ ⁎  170f3d36-b183-49a5-a34a-9d92fa9b08e1--my-awesome-nerdpack-nerdlet built ✔
+
+ ✔  Nerdpack built successfully!
 ```
+
+At this point you just need to open [that](https://one.eu.newrelic.com/?nerdpacks=local) URL 
+from your browser being sure to be logged in and 
 
 If needed you can remove the project
 ```shell
@@ -83,7 +114,7 @@ cd <YOUR_PROJECT_ROOT_DIRECTORY>
 PROJECT_NAME=my-awesome-nerdpack make remove
 ```
 
-https://one.eu.newrelic.com/?nerdpacks=local
+
 
 
 ### Distro
@@ -114,7 +145,5 @@ The project follows [this Git commit message convention](https://musement.atlass
 
 ## Useful links
 https://github.com/newrelic/nr1-slo-r
-https://discuss.newrelic.com/t/track-your-service-level-objectives-with-the-slo-r-nerdpack/90046
 
-# New Relic quality assurance build URL
-https://one.eu.newrelic.com/launcher/developer-center.launcher?pane=eyJuZXJkbGV0SWQiOiJkZXZlbG9wZXItY2VudGVyLmRldmVsb3Blci1jZW50ZXIifQ==
+https://discuss.newrelic.com/t/track-your-service-level-objectives-with-the-slo-r-nerdpack/90046
